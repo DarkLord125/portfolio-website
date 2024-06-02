@@ -32,9 +32,9 @@ export const Navbar = () => {
       <div className="flex flex-wrap items-center justify-between mx-auto p-6">
         <Link
           href={"/"}
-          className="text-white text-2xl md:text-5xl font-semibold"
+          className="text-white text-2xl md:text-3xl font-semibold"
         >
-          LOGO
+          Portfolio
         </Link>
         <div className="mobile menu block md:hidden">
           {!navbarOpen ? (
