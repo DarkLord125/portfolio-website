@@ -88,13 +88,13 @@ export const AboutSection = () => {
             About Me
           </h2>
           <p className="text-base lg:text-lg">
-            I am a computer science student who is passionate about technology.
-            I have experience in web development using frameworks such as
-            Nest.js, Express.js, and Next.js. I am also familiar with databases
-            like PostgreSQL and MongoDB. I am a quick learner, highly organized,
-            and detail-oriented, with a strong ability to work independently and
-            in a team. I am also excited to learn new technologies and
-            techniques to improve my skills.
+            I am a software engineer who is passionate about technology. I have
+            experience in web development using frameworks such as Nest.js,
+            Express.js, and Next.js. I am also familiar with databases like
+            PostgreSQL and MongoDB. I am a quick learner, highly organized, and
+            detail-oriented, with a strong ability to work independently and in
+            a team. I am also excited to learn new technologies and techniques
+            to improve my skills.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
