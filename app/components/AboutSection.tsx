@@ -1,23 +1,60 @@
 "use client";
 import { useState } from "react";
 import { TabButton } from "./TabButton";
+import Image from "next/image";
 
 export const AboutSection = () => {
   const [tab, setTab] = useState("skills");
 
   const skills = [
-    "Prisma",
-    "PostgreSQL",
-    "JavaScript",
-    "Docker",
-    "MongoDB",
-    "Git",
-    "Firebase",
-    "HTML",
-    "CSS",
-    "Next.js",
-    "TypeScript",
-    "Node.js",
+    {
+      name: "Prisma",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg",
+    },
+    {
+      name: "PostgreSQL",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+    },
+    {
+      name: "JavaScript",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+    },
+    {
+      name: "Docker",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+    },
+    {
+      name: "MongoDB",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+    },
+    {
+      name: "Git",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+    },
+    {
+      name: "Firebase",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
+    },
+    {
+      name: "HTML",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+    },
+    {
+      name: "CSS",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+    },
+    {
+      name: "Next.js",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+    },
+    {
+      name: "Node.js",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+    },
+    {
+      name: "TypeScript",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+    },
   ];
   const certifications = [
     "Introduction To Cloud Computing - IBM",
@@ -26,8 +63,8 @@ export const AboutSection = () => {
   const hobbies = [
     "Listening to Music",
     "Reading Books",
-    "Listening to Podcasts"
-  ]
+    "Listening to Podcasts",
+  ];
 
   const TAB_DATA = [
     {
@@ -37,9 +74,15 @@ export const AboutSection = () => {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="p-2 border rounded-md text-xs sm:text-sm hover:border-[#7074e5] hover:text-[#74aff5] w-fit"
+              className="p-2 flex gap-2 border rounded-md text-xs sm:text-sm hover:border-[#7074e5] hover:text-[#74aff5] w-fit"
             >
-              {skill}
+              <Image
+                src={skill.icon}
+                alt="tech-stack-icons"
+                height={20}
+                width={20}
+              />
+              {skill.name}
             </div>
           ))}
         </div>
