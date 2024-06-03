@@ -37,7 +37,6 @@ export const ExperienceSection = () => {
       <div>
         <VerticalTimeline
           animate={false}
-          // className="bg-gradient-to-r from-[#6b22cf] via-[#7074e5] to-[#74aff5]"
         >
           {items.map((item) => (
             <VerticalTimelineElement
