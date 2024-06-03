@@ -74,7 +74,7 @@ export const AboutSection = () => {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="p-2 flex gap-2 border rounded-md text-xs sm:text-sm hover:border-[#7074e5] hover:text-[#74aff5] w-fit"
+              className="p-2 flex gap-2 items-center border rounded-md text-xs sm:text-sm hover:border-[#7074e5] hover:text-[#74aff5] w-fit"
             >
               <Image
                 src={skill.icon}
