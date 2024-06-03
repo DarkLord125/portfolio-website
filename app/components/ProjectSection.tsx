@@ -13,7 +13,7 @@ export const ProjectSection = () => {
       image: "/images/projects/music-tune.png",
       tag: ["All", "Web"],
       gitUrl: "https://github.com/DarkLord125/MusicTune",
-      previewUrl: null,
+      previewUrl: "",
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ export const ProjectSection = () => {
       image: "/images/projects/attend-now.png",
       tag: ["All", "Web"],
       gitUrl: "https://github.com/DarkLord125/AtttendNow",
-      previewUrl: null,
+      previewUrl: "",
     },
     {
       id: 3,
@@ -33,7 +33,7 @@ export const ProjectSection = () => {
       image: "/images/projects/society-management-system.png",
       tag: ["All", "Web"],
       gitUrl: "https://github.com/DarkLord125/Society-Management-System",
-      previewUrl: null,
+      previewUrl: "",
     },
     {
       id: 4,
@@ -43,7 +43,7 @@ export const ProjectSection = () => {
       image: "/images/projects/BooksHive.jpg",
       tag: ["All", "Mobile"],
       gitUrl: "https://github.com/DarkLord125/BooksHive",
-      previewUrl: null,
+      previewUrl: "",
     },
   ];
 
