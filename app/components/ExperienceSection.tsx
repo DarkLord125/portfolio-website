@@ -1,5 +1,4 @@
 "use client";
-import { BriefcaseIcon } from "@heroicons/react/16/solid";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
