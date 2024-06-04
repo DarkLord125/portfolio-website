@@ -16,7 +16,7 @@ export const Navbar = () => {
       path: "#projects",
     },
     {
-      title: "Experience",
+      title: "My Journey",
       path: "#experience",
     },
     {
