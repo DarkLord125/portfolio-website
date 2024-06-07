@@ -26,8 +26,9 @@ export const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. voluptatum.
+          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 w-fit">
+            I&apos;m just a guy who loves tech and enjoys exploring how it
+            shapes our world.
           </p>
           <div>
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-white hover:bg-slate-200 text-white bg-gradient-to-r from-[#6b22cf] via-[#7074e5] to-[#74aff5] ">
