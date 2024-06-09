@@ -47,7 +47,7 @@ export const EmailSection = () => {
 
   return (
     <section
-      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4"
+      className="grid md:grid-cols-2 md:my-8 py-24 gap-4"
       id="contact"
     >
       <div>
