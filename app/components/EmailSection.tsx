@@ -4,6 +4,7 @@ import Link from "next/link";
 import GitHubIcon from "../../public/images/socials/github-icon.svg";
 import LinkedinIcon from "../../public/images/socials/linkedin-icon.svg";
 import XIcon from "../../public/images/socials/x-icon.svg";
+import MediumIcon from "../../public/images/socials/medium-icon.svg";
 import { MessageIcon } from "./MessageIcon";
 import { FormEvent } from "react";
 import toast from "react-hot-toast";
@@ -46,10 +47,7 @@ export const EmailSection = () => {
   };
 
   return (
-    <section
-      className="grid md:grid-cols-2 md:my-8 py-24 gap-4"
-      id="contact"
-    >
+    <section className="grid md:grid-cols-2 md:my-8 py-24 gap-4" id="contact">
       <div>
         <h5 className="text-xl font-bold text-white my-2">
           Let&apos;s Connect
@@ -73,7 +71,10 @@ export const EmailSection = () => {
             />
           </Link>
           <Link href="https://x.com/AshwinN84178463" target="_blank">
-            <Image src={XIcon} alt="linkedin icon" width={40} height={40} />
+            <Image src={XIcon} alt="twitter icon" width={40} height={40} />
+          </Link>
+          <Link href="https://medium.com/@hashwin381" target="_blank">
+            <Image src={MediumIcon} alt="medium icon" width={40} height={40} />
           </Link>
         </div>
       </div>
