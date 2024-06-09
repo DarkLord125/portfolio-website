@@ -9,15 +9,15 @@ export async function POST(req: Request) {
     port: 465,
     secure: true,
     auth: {
-      user: process.env.NEXT_PUBLIC_BURNER_EMAIL,
-      pass: process.env.NEXT_PUBLIC_BURNER_PASSWORD,
+      user: process.env.BURNER_EMAIL,
+      pass: process.env.BURNER_PASSWORD,
     },
   });
 
   try {
     await transporter.sendMail({
-      from: process.env.NEXT_PUBLIC_BURNER_EMAIL,
-      to: process.env.NEXT_PUBLIC_EMAIL,
+      from: process.env.BURNER_EMAIL,
+      to: process.env.EMAIL,
       subject: `Message from ${email}`,
       html: `
             <p>Email: ${email} </p>
