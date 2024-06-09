@@ -58,7 +58,7 @@ export const EmailSection = () => {
           open. Whether you have a question or just want to say hi, I&apos;ll
           try my best to get back to you!
         </p>
-        <div className="flex flex-row gap-2">
+        <div className="flex flex-row gap-2 items-center">
           <Link href="https://github.com/DarkLord125" target="_blank">
             <Image src={GitHubIcon} alt="github icon" width={40} height={40} />
           </Link>
@@ -74,7 +74,7 @@ export const EmailSection = () => {
             <Image src={XIcon} alt="twitter icon" width={40} height={40} />
           </Link>
           <Link href="https://medium.com/@hashwin381" target="_blank">
-            <Image src={MediumIcon} alt="medium icon" width={40} height={40} />
+            <Image src={MediumIcon} alt="medium icon" width={50} height={50} />
           </Link>
         </div>
       </div>
