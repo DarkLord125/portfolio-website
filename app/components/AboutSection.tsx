@@ -20,6 +20,10 @@ export const AboutSection = () => {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
     },
     {
+      name: "Java",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/java-original.svg",
+    },
+    {
       name: "Docker",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
     },
