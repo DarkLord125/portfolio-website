@@ -115,9 +115,7 @@ export const ExperienceSection = () => {
               <h4 className="vertical-timeline-element-subtitle text-black text-sm sm:text-base">
                 {item.location}
               </h4>
-              {/* <p className="text-black text-sm sm:text-base"> */}
               {item.description}
-              {/* </p> */}
             </VerticalTimelineElement>
           ))}
         </VerticalTimeline>
