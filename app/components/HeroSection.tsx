@@ -2,11 +2,11 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { TypeAnimation } from "react-type-animation";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import Link from "next/link";
 
 export const HeroSection = () => {
-  const text = ["Ashwin", 1000, "Web Developer", 1000];
+  const text = ["Ashwin", 1000, "Software Engineer", 1000];
 
   const router = useRouter();
 

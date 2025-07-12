@@ -2,7 +2,7 @@
 import { useRef, useState } from "react";
 import { ProjectCard } from "./ProjectCard";
 import { ProjectTag } from "./ProjectTag";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView } from "motion/react";
 
 export const ProjectSection = () => {
   const projectsData = [

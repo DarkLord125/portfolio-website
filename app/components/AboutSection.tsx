@@ -65,9 +65,11 @@ export const AboutSection = () => {
     "Version Control - Meta",
   ];
   const hobbies = [
-    "Listening to Music",
-    "Reading Books",
-    "Listening to Podcasts",
+    "Listening to Music 🎧",
+    "Reading Books 📚",
+    "Listening to Podcasts 🎤",
+    "Playing Badminton 🏸",
+    "Playing Table Tennis 🏓",
   ];
 
   const TAB_DATA = [
