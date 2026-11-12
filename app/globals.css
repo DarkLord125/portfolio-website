@@ -3,35 +3,74 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  color-scheme: dark;
+  --hud-line: rgba(159, 208, 255, 0.16);
+  --hud-line-strong: rgba(159, 208, 255, 0.38);
+  --hud-surface: rgba(7, 11, 22, 0.62);
+  /* Layout zones shared by hud/ and panels/ so they never overlap */
+  --hud-top: 56px;
+  --hud-bottom: 0px;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (max-width: 767px) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --hud-top: 48px;
+    --hud-bottom: 64px; /* mobile bottom navigation bar */
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #03050b;
+  color: #e6edf7;
+}
+
+@layer components {
+  /* Glass surface used by HUD chrome and holographic panels */
+  .hud-surface {
+    background: var(--hud-surface);
+    border: 1px solid var(--hud-line);
+    backdrop-filter: blur(14px) saturate(120%);
+    -webkit-backdrop-filter: blur(14px) saturate(120%);
+  }
+  /* Small uppercase data label */
+  .hud-label {
+    font-family: var(--font-mono), ui-monospace, monospace;
+    font-size: 0.6875rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(159, 208, 255, 0.72);
+  }
+  .hud-value {
+    font-family: var(--font-mono), ui-monospace, monospace;
+    font-size: 0.8125rem;
+    color: #e6edf7;
+    font-variant-numeric: tabular-nums;
+  }
+  .focus-ring {
+    @apply outline-none focus-visible:ring-2 focus-visible:ring-ice focus-visible:ring-offset-2 focus-visible:ring-offset-space-950;
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(159, 208, 255, 0.3) transparent;
+  }
 }
 
-html {
-  scroll-behavior: smooth;
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
